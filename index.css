@@ -1,18 +1,33 @@
+
 .navBar {
-    display: flex;
+    display: inline-block;
+    width: 100%;
     font-family:'Montserrat', sans-serif; 
     font-size: 18px; color: gray;
-    font-weight: 1,400;
-    box-shadow: 0 8px 8px -4px rgb(0 0 0 / 0.2);
-    margin: 30px; padding: 5px; 
-    justify-content: flex-end;
+    font-weight: 600;
+    box-shadow: 0 8px 8px -4px rgb(0 0 0 / 0.2); 
+    padding: 5px; 
 }
 
-.flex-container > div { display: inline-flex;
+.flex-container {
     margin: 30px;
 }
 
-.logo { height: 60px; width: 135px;}
+.logo { 
+    height: 60px; 
+    width: 135px;
+    float: left;
+}
+
+.menus {
+    display: inline-flex;
+    float: right;
+}
+
+.menu {
+    padding-left: 30px;
+    padding-right: 30px;
+}
 
 .title {font-family:'Montserrat', sans-serif; 
     font-size: 40px; color: rgb(39, 3A, 3A); 
@@ -20,38 +35,133 @@
     margin-left: 120px; margin-right: auto;
 }
 
-.blurb { width: 70%; 
+.blurb { 
+    width: 70%; 
     align-content: center;
-    font-family:'Montserrat', sans-serif; 
-    font-size: 18px; color: rgb(65, 63, 63);
-    font-weight: lighter;
+    font-family:'Montserrat', sans-serif;
+    font-size: 16px; color: rgb(65, 63, 63);
+    font-weight: normal;
     margin-left: 120px; margin-right: auto;
+    line-height: 25px;
 }
 
 .buttons { 
     display: flex;
-    margin-left: 100px; margin-right: auto;
-    border-radius: 15px; 
+    margin-left: 90px; margin-right: auto;
 }
 
-.buttons > div { margin: 30px;}
+.buttons > div {
+    margin: 20px;
+    padding-bottom: 20px;
+    transform: translate(10px)
+}
 
-#button1 { font-family:'Montserrat', sans-serif; 
-    font-size: 18px;}
+.button1 {background-color: #084b83;
+border: #084b83;
+border-radius: 70px;
+transition-duration: 0.4s;
 
-.footerContent { height: 1000px; 
-background-color: rgb(31, 31, 31);}
+}
+
+.button1:hover {
+  background-color: #91B4CC;
+}
+
+.button2 { 
+  background-color: white;
+  border-radius: 70px;
+  border: 1px solid #1E1E1E; 
+  transition-duration: 0.4s;
+}
+
+.button2:hover {
+    background-color: rgb(221, 221, 221);
+    border: 1px solid rgb(221, 221, 221);
+}
+
+.projectsText {
+    padding-left: 45px;
+    padding-right: 45px;
+    color: white;
+    font-family:'Montserrat', sans-serif; 
+    font-weight: bold; 
+    font-size: 14px;
+    margin: 10px;
+}
+.resumeText {
+    padding-left: 45px;
+    padding-right: 45px;
+    color: #1E1E1E;
+    font-family:'Montserrat', sans-serif; 
+    font-weight: bold; 
+    font-size: 14px;
+    margin: 10px;
+}
+
+.photos { 
+    display: flex; 
+    width: 35%; 
+}
+
+.photo1 { 
+    background-color: rgb(14, 100, 100);
+
+}
+
+.footerContent { 
+    height: 100%; 
+    background-color: rgb(31, 31, 31);
+    padding-top: 100px;
+    padding-bottom: 180px;    
+    vertical-align: center;
+    width: 50%;
+}
 
 .Chat { font-family:'Montserrat', sans-serif; 
-    font-size: 40px; color: white;
-    margin-right: auto; margin-left: 120px; 
+    font-size: 40px; color: white;  
+    transform: translate(120px);
 }
 
 .chatBlurb { font-family:'Montserrat', sans-serif; 
             font-size: 14px; color: white;
-            width: 35%; 
-            margin-right: auto; margin-left: 120px; 
+            width: 50%; 
+            transform: translate(120px);
+        }
+
+.footerBox {
+    display: inline-flex;
+    justify-content: space-around;
+    background-color: rgb(31, 31, 31);
 }
 
-.footerBox {max-height: 1000px; 
-    background-color: rgb(31, 31, 31);}
+.form { 
+    padding-top: 100px;
+    width: 50%;
+    padding-left: 150px; 
+}
+
+.line1 { font-family:'Montserrat', sans-serif; 
+    font-size: 14px; color: white;
+}
+
+.email {
+    width: 372px;
+    padding: 17px; margin: 20px;
+    background-color: white;  
+    border-radius: 8px;
+    transform: translate(-18px);
+}
+
+.line2 { font-family:'Montserrat', sans-serif; 
+    font-size: 14px; color: white;
+    padding-top: 10px; 
+}
+
+.message {
+    width: 410px;
+    height: 200px; 
+    margin: 20px;
+    background-color: white;  
+    border-radius: 12px;
+    transform: translate(-18px);
+}

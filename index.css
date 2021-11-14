@@ -17,6 +17,7 @@
     height: 60px; 
     width: 135px;
     float: left;
+    transform: translate(0,-8px);
 }
 
 .menus {
